@@ -1,0 +1,50 @@
+.editor {
+    width: 100%;
+    max-width: 1920px;
+    box-sizing: border-box;
+    display: -moz-box;
+    display: -webkit-box;
+    display: box;
+    -moz-box-orient: horizontal;
+    -webkit-box-orient: horizontal;
+    box-orient: horizontal;
+    width: 100%;
+
+    .column {
+        width: 100%;
+        padding: 20px;
+        -moz-box-flex: 1;
+        -webkit-box-flex: 1;
+        box-flex: 1;
+    }
+
+    input,
+    textarea {
+        display: block;
+        width: 100%;
+        padding: 5px;
+
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+
+    textarea {
+        resize: none;
+        min-height: 400px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .editor {
+        display: block;
+        padding: 20px;
+
+        .editor-space {
+            box-sizing: border-box;
+        }
+    
+        .preview {
+            display: none;
+        }
+    }
+}
